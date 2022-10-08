@@ -41,4 +41,3 @@ Regarding the feedback system, students can grade and give feedback to the tutor
 The entire program will store data and provide services on a server deployed in the cloud, and user interaction will be mainly performed on web pages.
 
 The main purpose of developing Zot Lab is to help Lab Tutor arrange their session more efficiently, avoiding the traditional way for students to raise their hands or write their names on the whiteboard (there is a great chance that tutor cannot identify people by name in most cases). This also solves social phobias and helps more students to make good use of the lab time. Tutors and TAs also get valuable feedback and stats.
-
