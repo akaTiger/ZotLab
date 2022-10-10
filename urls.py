@@ -24,5 +24,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-	path('', views.webTitle),
+	path('', views.webTitleHtml),
 ]

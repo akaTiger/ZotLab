@@ -1,4 +1,7 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
-def webTitle(request):
-	return HttpResponse("Welcome to ZotLab!")
+def webTitleHtml(request):
+	context = {}
+	context['title'] = 'ZOT LAB !!'
+	return render(request, 'home.html', context)
