@@ -20,9 +20,14 @@ Including another URLconf
 #    path('admin/', admin.site.urls),
 #]
 
-from django.urls import path
+from django.urls import re_path, path
 from . import views
+from . import testdb
 from django.conf import settings
 from django.conf.urls.static import static
 
-urlpatterns = [path('', views.webTitleHtml),] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns = [
+	path('', views.webTitleHtml),
+	re_path(r'^addQueue/$', testdb.addQueue),
+	re_path(r'^add/$', testdb.add)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
